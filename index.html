@@ -6,23 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-<style>
-body, html {
-  height: 100%;
-  font-family: "Inconsolata", sans-serif;
-}
-
-.bgimg {
-  background-position: center;
-  background-size: cover;
-  background-image: url("/w3images/coffeehouse.jpg");
-  min-height: 75%;
-}
-
-.menu {
-  display: none;
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -36,21 +20,19 @@ body, html {
       <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
     </div>
     <div class="w3-col s3">
-      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+      <a href="#menu" class="w3-button w3-block w3-black">CONCEPTUAL DESIGN</a>
     </div>
     <div class="w3-col s3">
-      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+      <a href="#where" class="w3-button w3-block w3-black">DESIGN PROCESS</a>
     </div>
   </div>
 </div>
 
 <!-- Header with image -->
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-    <span class="w3-tag">Open from 6am to 5pm</span>
-  </div>
   <div class="w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:90px">the<br>Cafe</span>
+    <span class="w3-text-white" style="font-size:90px">Paws and Relax</span>
+    <span class="w3-tag w3-wide">Yuling Sun, Bethany Vasquez, Sandy Zheng</span>
   </div>
   <div class="w3-display-bottomright w3-center w3-padding-large">
     <span class="w3-text-white">15 Adr street, 5015</span>
@@ -80,69 +62,65 @@ body, html {
 <div class="w3-container" id="menu">
   <div class="w3-content" style="max-width:700px">
  
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONCEPTUAL DESIGN</span></h5>
   
     <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-        <div class="w3-col s6 tablink">Eat</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Features');" id="myLink">
+        <div class="w3-col s6 tablink">Features</div>
       </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="w3-col s6 tablink">Drink</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Components');">
+        <div class="w3-col s6 tablink">Components</div>
       </a>
     </div>
 
-    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Bread Basket</h5>
-      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    <div id="Features" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Plushie form</h5>
+      <p class="w3-text-grey">The system takes the form of a comforting animal plushie with long arms that can wrap around the user's neck to simulate a hug from behind. This is reminiscent of affectionate behavior from a pet companion.</p><br>
     
-      <h5>Honey Almond Granola with Fruits</h5>
-      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+      <h5>Stress detection</h5>
+      <p class="w3-text-grey">Through hugging the user, the system can detect signs of stress from the user and react accordingly.</p><br>
     
-      <h5>Belgian Waffle</h5>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-    
-      <h5>Scrambled eggs</h5>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
-    
-      <h5>Blueberry Pancakes</h5>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+      <h5>Vibrations</h5>
+      <p class="w3-text-grey">The plushie's response to stress detection is to provide comforting vibrations, akin to a pet's purr. This gives the user a sense of comfort and is also a unobtrusive way to prompt the user to take a break.</p><br>
     </div>
 
-    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Coffee</h5>
-      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    <div id="Components" class="w3-container menu w3-padding-48 w3-card">
+      <h5>GSR Sensor</h5>
+      <p class="w3-text-grey">GSR (galvanic skin response) measure skin conductance based on the amount of sweat gland activity. It can be used as a measure of stress due to sweating being a common feature of stress, and a GSR sensor can detect minute changes in sweat gland activity and skin conductance in order to do so.</p><br>
     
-      <h5>Chocolato</h5>
-      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+      <h5>Vibrating motors</h5>
+      <p class="w3-text-grey">Triggers the comforting vibrations in the plushie.</p><br>
     
-      <h5>Corretto</h5>
-      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
-    
-      <h5>Iced tea</h5>
-      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
-    
-      <h5>Soda</h5>
-      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+      <h5>Seeeduino board</h5>
+      <p class="w3-text-grey">The board we use to connect the code for taking GSR sensor measures to the vibrating motors. Our code establishes a baseline value for the first ten seconds the user uses the system and then calculates variance from the baseline value. If it breaches a certain quantity, then the vibrating motors activate.</p><br>
     </div>  
-    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
   </div>
 </div>
 
 <!-- Contact/Area Container -->
 <div class="w3-container" id="where" style="padding-bottom:32px;">
   <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
-    <p>Find us at some address at some place.</p>
-    <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
-    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
-    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
-    </form>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">DESIGN PROCESS</span></h5>
+    <h5>Initial ideation</h5>
+    <p>We made an initial sketch for what we wanted the process to look like, which included a timer functionality. It shows our Paws & Relax stuffed animal. The way it looks general, very similar to a teddy bear or other stuffed animal. While at work the P&R would rest on the user with its arms around them while they work. When taking a break the user flips the P&R to interact with it, snoozing or turning off the alarm.</p>
+    <div class="img-field">
+        <img src="img/ideation1.jpeg" class="small-img">
+        <img src="img/ideation2.jpeg" class="small-img">
+        <img src="img/ideation3.jpeg" class="small-img">
+        <img src="img/ideation4.jpeg" class="small-img">
+    </div>
+
+    <h5>Low-fidelity prototype</h5>
+    <p>We developed a low fidelity prototype by sewing and stuffing two long pairs of arms and a body. For the technical components, we used the LittleBits components to mimic vibrations and a noise synthesizer to mimic the affectionate behavior we wanted from the P&R while also producing "affectionate" noise. Feedback we got regarding this prototype was to focus more on the companionship aspect, perhaps by removing a timer aspect so that the companion was less obtrusive for the user's workflow and focusing on detecting stress instead.</p>
+    <div class="img-field">
+        <img src="img/example1.png" class="small-img">
+    </div>
+    
+
+    <h5>High-fidelity prototype</h5>
+    <p>For our final high-fidelity prototype, it was suggested we use a GSR sensor for stress detection. As such, we decided to test taking GSR measurements and how we can correlate it to stress. After experimentation, we were also able to obtain a plushie form, a sloth we affectionately named Slinky. After modifying the code for the GSR sensor based on calculating variance from baseline, we integrated the GSR sensor and the vibrating motor with the plushie by making an incision in the plushie's head and body as well as the arms, sticking the GSR sensor and the vibrating motors, one of each, through each arm, leaving a hole open for the GSR sensor so it can take measurements from the user's neck area.</p>
+    <video width="400" height="300" class="small-img" controls><source src="img/320 demo.mp4" type="video/mp4"></video>
+    
   </div>
 </div>
 
